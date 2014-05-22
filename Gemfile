@@ -30,6 +30,7 @@ gem 'rails', '4.1.1'
 group :development, :test do 
   gem 'dotenv-rails' 
   gem 'pry'
+  # gem 'rspec-rails'
 end
 
 
