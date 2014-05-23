@@ -4,37 +4,8 @@ PUT CSS IN CSS FILE
 KEEP DIV HERE PLUS ANY OTHER HTML STYLING -->
 
 
-<style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map-canvas { height: 100% }
-    </style>
+
     
-    <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
-          zoom: 8
-        };
-        // var div = document.getElementById("map-canvas")
-        // var map= new google.maps.Map(div, mapOptions)
-        // or 
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-        //AJAX get
 
-        var addPin = function(lat, lng){
-	        var loc = new google.maps.LatLng(lat, lng);
-					var newMarker = new google.maps.Marker({
-		  			position: loc,
-		  			map: map //second map here is taco variable
-						});
-					};
-		    
-	    	addPin(-34.397, 150.644) // call addPin in ajax post method
-      }
-
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 
     <div id="map-canvas"/>

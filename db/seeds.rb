@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Pin.destroy_all
+Pin.create([{ lat: '34.36', lng: '58.22' }])
+Pin.create([{ lat: '37.46', lng: '122.25' }])
+Pin.create([{ lat: '37.59', lng: '23.43' }])
+
