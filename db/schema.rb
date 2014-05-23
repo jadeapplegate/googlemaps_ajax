@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20140522040129) do
 
   create_table "pins", force: true do |t|
     t.float    "lat"
-    t.float    "lon"
+    t.float    "lng"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
